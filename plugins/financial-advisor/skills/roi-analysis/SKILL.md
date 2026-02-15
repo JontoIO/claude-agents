@@ -1,3 +1,8 @@
+---
+name: roi-analysis
+description: Calculate Return on Investment for software projects and business decisions. Use when evaluating project viability, comparing investment options, or justifying budget allocations.
+---
+
 # ROI Analysis Skill
 
 A systematic framework for calculating Return on Investment (ROI) for software projects, features, and business decisions.

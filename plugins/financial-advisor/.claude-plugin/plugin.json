@@ -1,0 +1,23 @@
+{
+  "name": "financial-advisor",
+  "description": "An agent specialized in financial analysis and planning for software projects",
+  "version": "1.0.0",
+  "author": {
+    "name": "JontoIO",
+    "email": "contact@jonto.io"
+  },
+  "homepage": "https://github.com/jontoIO/claude-agents",
+  "repository": "https://github.com/jontoIO/claude-agents",
+  "license": "MIT",
+  "keywords": [
+    "finance",
+    "cost-estimation",
+    "revenue-modeling",
+    "financial-risk",
+    "monetization",
+    "budget-planning",
+    "roi",
+    "saas",
+    "api-costs"
+  ]
+}

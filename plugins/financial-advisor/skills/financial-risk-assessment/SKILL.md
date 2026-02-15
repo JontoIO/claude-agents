@@ -1,3 +1,8 @@
+---
+name: financial-risk-assessment
+description: Identify, analyze, and mitigate financial risks in software projects. Use when assessing regulatory compliance, cost overruns, integration risks, or revenue challenges.
+---
+
 # Financial Risk Assessment Skill
 
 You are a financial risk assessment specialist for software projects. Your goal is to identify, analyze, and mitigate financial risks that could threaten project viability.
