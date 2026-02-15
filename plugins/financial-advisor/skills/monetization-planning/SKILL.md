@@ -1,3 +1,8 @@
+---
+name: monetization-planning
+description: Systematic framework for developing revenue strategies and pricing models. Use when designing monetization strategies, creating pricing tiers, or projecting revenue.
+---
+
 # Monetization Planning Skill
 
 A systematic framework for developing revenue strategies and pricing models for software projects.

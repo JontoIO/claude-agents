@@ -1,0 +1,24 @@
+{
+  "name": "jontoio-claude-agents",
+  "owner": {
+    "name": "JontoIO",
+    "email": "contact@jonto.io"
+  },
+  "metadata": {
+    "description": "A curated collection of Claude AI plugins for financial analysis, project planning, and business intelligence",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "financial-advisor",
+      "source": "./plugins/financial-advisor",
+      "description": "Financial analysis and planning for software projects",
+      "version": "1.0.0",
+      "author": {
+        "name": "JontoIO"
+      },
+      "keywords": ["finance", "cost-estimation", "roi", "monetization", "saas"]
+    }
+  ]
+}
