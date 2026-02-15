@@ -1,0 +1,35 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+.env
+.env.local
+
+# Node modules (if JavaScript examples are added)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Python cache (if Python examples are added)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
