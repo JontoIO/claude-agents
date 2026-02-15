@@ -1,0 +1,24 @@
+{
+  "name": "product-manager",
+  "description": "Product strategy, competitive analysis, persona definition, and product evolution planning for any software product",
+  "version": "1.0.0",
+  "author": {
+    "name": "JontoIO",
+    "email": "contact@jonto.io"
+  },
+  "homepage": "https://github.com/jontoIO/claude-agents",
+  "repository": "https://github.com/jontoIO/claude-agents",
+  "license": "MIT",
+  "keywords": [
+    "product-management",
+    "competitive-analysis",
+    "user-personas",
+    "product-strategy",
+    "roadmap-planning",
+    "changelog",
+    "feature-prioritization",
+    "market-research",
+    "product-evolution",
+    "improvement-proposals"
+  ]
+}
