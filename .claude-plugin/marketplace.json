@@ -19,6 +19,16 @@
         "name": "JontoIO"
       },
       "keywords": ["finance", "cost-estimation", "roi", "monetization", "saas"]
+    },
+    {
+      "name": "product-manager",
+      "source": "./plugins/product-manager",
+      "description": "Product strategy, competitive analysis, persona definition, and product evolution planning",
+      "version": "1.0.0",
+      "author": {
+        "name": "JontoIO"
+      },
+      "keywords": ["product-management", "competitive-analysis", "personas", "roadmap", "changelog"]
     }
   ]
 }
