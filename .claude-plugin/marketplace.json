@@ -5,7 +5,7 @@
     "email": "contact@jonto.io"
   },
   "metadata": {
-    "description": "A curated collection of Claude AI plugins for financial analysis, project planning, and business intelligence",
+    "description": "A curated collection of Claude AI plugins for financial analysis, product management, and AI optimization",
     "version": "1.0.0",
     "pluginRoot": "./plugins"
   },
@@ -29,6 +29,16 @@
         "name": "JontoIO"
       },
       "keywords": ["product-management", "competitive-analysis", "personas", "roadmap", "changelog"]
+    },
+    {
+      "name": "ai-specialist",
+      "source": "./plugins/ai-specialist",
+      "description": "Proactive AI optimization agent that monitors Claude sessions, optimizes instructions, improves memory efficiency, designs test strategies, and reduces token usage",
+      "version": "1.0.0",
+      "author": {
+        "name": "JontoIO"
+      },
+      "keywords": ["ai-optimization", "claude-instructions", "token-efficiency", "memory-management", "test-strategy", "prompt-engineering", "context-optimization", "ai-integration"]
     }
   ]
 }
