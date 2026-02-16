@@ -1,6 +1,6 @@
 # Claude Agents Plugin Marketplace
 
-A curated collection of Claude AI plugins for financial analysis, project planning, and business intelligence.
+A curated collection of Claude AI plugins for financial analysis, product management, and AI optimization.
 
 ## 📖 Overview
 
@@ -62,6 +62,78 @@ A comprehensive financial analysis plugin for software projects, providing cost 
 
 **Documentation**: [Plugin README](./plugins/financial-advisor/README.md)
 
+---
+
+### Product Manager
+
+**Version**: 1.0.0
+
+A comprehensive product management plugin that provides product strategy, competitive analysis, persona definition, improvement proposals, and changelog creation capabilities for any software product.
+
+**Features**:
+- Product evolution analysis with prioritized roadmaps
+- Competitive intelligence with feature matrices
+- Evidence-based user personas using jobs-to-be-done
+- Prioritized improvement proposals with RICE scoring
+- Compelling changelogs optimized for different audiences
+
+**Components**:
+- **Agent**: `product-manager` - Strategic product management specialist
+- **Skills**:
+  - `product-evolution-analysis` - 7-step product assessment and roadmap
+  - `competitive-intelligence` - 7-step competitive research and positioning
+  - `persona-definition` - 6-step evidence-based persona creation
+  - `improvement-proposals` - 6-step prioritized feature proposals
+  - `changelog-creation` - 5-step user-facing changelog generation
+- **Commands**:
+  - `quick-competitive-scan` - 5-10 min rapid competitor overview
+  - `quick-changelog` - 3-5 min user-facing changelog from commits
+  - `persona-quick-reference` - 5 min basic persona profile
+  - `feature-impact-estimate` - 3-5 min RICE score and go/no-go
+
+**Installation**:
+```bash
+/plugin install product-manager@jontoio-claude-agents
+```
+
+**Documentation**: [Plugin README](./plugins/product-manager/README.md)
+
+---
+
+### AI Specialist
+
+**Version**: 1.0.0
+
+A proactive AI optimization plugin that monitors Claude sessions, optimizes instructions, improves memory efficiency, designs test strategies, and reduces token usage for Claude-powered projects.
+
+**Features**:
+- Claude instructions optimization (20-40% token reduction)
+- Memory efficiency analysis for better context retention
+- Test strategy design ensuring 100% test coverage
+- Prompt enhancement for clarity and efficiency
+- Token optimization audits with cost savings analysis
+- Proactive monitoring suggesting improvements at optimal moments
+
+**Components**:
+- **Agent**: `ai-specialist` - Proactive AI optimization specialist
+- **Skills**:
+  - `claude-instructions-optimization` - 7-step CLAUDE.md optimization
+  - `memory-efficiency-analysis` - 6-step MEMORY.md optimization
+  - `test-strategy-design` - 5-step comprehensive test planning
+  - `prompt-enhancement` - 6-step prompt clarity and efficiency
+  - `token-optimization-audit` - 7-step token analysis and roadmap
+- **Commands**:
+  - `quick-instruction-audit` - 5-7 min CLAUDE.md review with top 3 issues
+  - `quick-test-plan` - 3-5 min test strategy addition
+  - `token-usage-snapshot` - 2-3 min token overview and opportunities
+
+**Installation**:
+```bash
+/plugin install ai-specialist@jontoio-claude-agents
+```
+
+**Documentation**: [Plugin README](./plugins/ai-specialist/README.md)
+
 ## 📁 Marketplace Structure
 
 ```
@@ -69,26 +141,36 @@ claude-agents/                          # Marketplace root
 ├── .claude-plugin/
 │   └── marketplace.json                # Marketplace manifest
 ├── plugins/
-│   └── financial-advisor/              # Financial advisor plugin
+│   ├── financial-advisor/              # Financial advisor plugin
+│   │   ├── .claude-plugin/
+│   │   │   └── plugin.json             # Plugin manifest
+│   │   ├── agents/
+│   │   │   └── financial-advisor.md    # Agent definition
+│   │   ├── skills/                     # 4 financial skills
+│   │   ├── commands/                   # Quick cost estimate
+│   │   ├── examples/                   # SaaS startup example
+│   │   ├── README.md                   # Plugin documentation
+│   │   └── CHANGELOG.md                # Version history
+│   ├── product-manager/                # Product manager plugin
+│   │   ├── .claude-plugin/
+│   │   │   └── plugin.json
+│   │   ├── agents/
+│   │   │   └── product-manager.md
+│   │   ├── skills/                     # 5 product skills
+│   │   ├── commands/                   # 4 quick commands
+│   │   ├── examples/                   # Product examples
+│   │   ├── README.md
+│   │   └── CHANGELOG.md
+│   └── ai-specialist/                  # AI specialist plugin
 │       ├── .claude-plugin/
-│       │   └── plugin.json             # Plugin manifest
+│       │   └── plugin.json
 │       ├── agents/
-│       │   └── financial-advisor.md    # Agent definition
-│       ├── skills/
-│       │   ├── cost-estimation/
-│       │   │   └── SKILL.md
-│       │   ├── monetization-planning/
-│       │   │   └── SKILL.md
-│       │   ├── financial-risk-assessment/
-│       │   │   └── SKILL.md
-│       │   └── roi-analysis/
-│       │       └── SKILL.md
-│       ├── commands/
-│       │   └── quick-cost-estimate.md
-│       ├── examples/
-│       │   └── saas-startup.md
-│       ├── README.md                   # Plugin documentation
-│       └── CHANGELOG.md                # Version history
+│       │   └── ai-specialist.md
+│       ├── skills/                     # 5 optimization skills
+│       ├── commands/                   # 3 quick commands
+│       ├── examples/                   # Optimization examples
+│       ├── README.md
+│       └── CHANGELOG.md
 ├── docs/
 │   ├── creating-plugins.md             # Plugin development guide
 │   └── marketplace-setup.md            # Marketplace usage guide
@@ -167,7 +249,9 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on:
 
 - [Plugin Development Guide](./docs/creating-plugins.md) - How to create new plugins
 - [Marketplace Setup Guide](./docs/marketplace-setup.md) - How to use this marketplace
-- [Financial Advisor Plugin](./plugins/financial-advisor/README.md) - Plugin documentation
+- [Financial Advisor Plugin](./plugins/financial-advisor/README.md) - Financial analysis documentation
+- [Product Manager Plugin](./plugins/product-manager/README.md) - Product management documentation
+- [AI Specialist Plugin](./plugins/ai-specialist/README.md) - AI optimization documentation
 
 ## 🔗 Resources
 
@@ -184,16 +268,16 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 - **Name**: jontoio-claude-agents
 - **Owner**: JontoIO
 - **Version**: 1.0.0
-- **Plugins**: 1 (more coming soon!)
+- **Plugins**: 3 available (Financial Advisor, Product Manager, AI Specialist)
 
 ## 🔮 Future Plugins
 
 We're planning to add more plugins in the future:
-- Project management and planning tools
 - Code review and quality analysis
 - Documentation generation
 - API design and documentation
 - Security and vulnerability analysis
+- DevOps and infrastructure optimization
 
 Stay tuned for updates!
 

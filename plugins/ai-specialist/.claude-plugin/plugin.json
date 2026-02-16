@@ -1,0 +1,22 @@
+{
+  "name": "ai-specialist",
+  "description": "Proactive AI optimization agent that monitors Claude sessions, optimizes instructions, improves memory efficiency, designs test strategies, and reduces token usage",
+  "version": "1.0.0",
+  "author": {
+    "name": "JontoIO",
+    "email": "contact@jonto.io"
+  },
+  "homepage": "https://github.com/jontoIO/claude-agents",
+  "repository": "https://github.com/jontoIO/claude-agents",
+  "license": "MIT",
+  "keywords": [
+    "ai-optimization",
+    "claude-instructions",
+    "token-efficiency",
+    "memory-management",
+    "test-strategy",
+    "prompt-engineering",
+    "context-optimization",
+    "ai-integration"
+  ]
+}
