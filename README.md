@@ -172,6 +172,45 @@ An EU tax analysis plugin for software founders, freelancers, and SaaS teams. Sc
 
 **Documentation**: [Plugin README](./plugins/tax-advisor/README.md)
 
+---
+
+### CEO
+
+**Version**: 1.0.0
+
+The CEO orchestrator agent that coordinates all marketplace agents (financial-advisor, product-manager, tax-advisor, ai-specialist) to answer complex, multi-dimensional business questions with executive-level strategic guidance. Detects available agents automatically and degrades gracefully when some are missing.
+
+**Features**:
+- Multi-agent orchestration: decomposes questions, delegates to specialist agents, synthesizes results
+- Cross-domain conflict resolution with explicit conflict surfacing and CEO verdict
+- Go/no-go launch decisions with weighted scorecards and 30-day checklists
+- Business opportunity evaluation with Pursue / Pilot / Pass recommendations
+- Strategic roadmap planning integrating product, financial, compliance, and technical milestones
+- Graceful degradation with alerts and install suggestions when agents are missing
+
+**Components**:
+- **Agent**: `ceo` — CEO orchestrator with agent detection and graceful degradation
+- **Skills**:
+  - `strategic-assessment` — Full situational analysis with SWOT
+  - `production-readiness-analysis` — Launch readiness with traffic-light dashboard
+  - `opportunity-analysis` — Business opportunity evaluation and verdict
+  - `executive-briefing` — Multi-agent executive summary (board, investor, team)
+  - `company-roadmap-planning` — Cross-functional strategic roadmap
+- **Commands**:
+  - `quick-health-check` — 2-3 min company health snapshot
+  - `production-go-nogo` — Quick launch readiness verdict
+  - `opportunity-scan` — Rapid opportunity score and recommendation
+  - `weekly-ceo-briefing` — Weekly executive summary
+
+**Works best with**: financial-advisor, product-manager, tax-advisor, ai-specialist
+
+**Installation**:
+```bash
+/plugin install ceo@jontoio-claude-agents
+```
+
+**Documentation**: [Plugin README](./plugins/ceo/README.md)
+
 ## 📁 Marketplace Structure
 
 ```
@@ -199,14 +238,34 @@ claude-agents/                          # Marketplace root
 │   │   ├── examples/                   # Product examples
 │   │   ├── README.md
 │   │   └── CHANGELOG.md
-│   └── ai-specialist/                  # AI specialist plugin
+│   ├── ai-specialist/                  # AI specialist plugin
+│   │   ├── .claude-plugin/
+│   │   │   └── plugin.json
+│   │   ├── agents/
+│   │   │   └── ai-specialist.md
+│   │   ├── skills/                     # 5 optimization skills
+│   │   ├── commands/                   # 3 quick commands
+│   │   ├── examples/                   # Optimization examples
+│   │   ├── README.md
+│   │   └── CHANGELOG.md
+│   ├── tax-advisor/                    # Tax advisor plugin
+│   │   ├── .claude-plugin/
+│   │   │   └── plugin.json
+│   │   ├── agents/
+│   │   │   └── tax-advisor.md
+│   │   ├── skills/                     # 5 tax skills
+│   │   ├── commands/                   # 3 quick commands
+│   │   ├── examples/                   # EU SaaS example
+│   │   ├── README.md
+│   │   └── CHANGELOG.md
+│   └── ceo/                            # CEO orchestrator plugin
 │       ├── .claude-plugin/
 │       │   └── plugin.json
 │       ├── agents/
-│       │   └── ai-specialist.md
-│       ├── skills/                     # 5 optimization skills
-│       ├── commands/                   # 3 quick commands
-│       ├── examples/                   # Optimization examples
+│       │   └── ceo.md                  # CEO orchestrator agent
+│       ├── skills/                     # 5 strategic skills
+│       ├── commands/                   # 4 executive commands
+│       ├── examples/                   # Production launch example
 │       ├── README.md
 │       └── CHANGELOG.md
 ├── docs/
@@ -306,7 +365,7 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 - **Name**: jontoio-claude-agents
 - **Owner**: JontoIO
 - **Version**: 1.0.0
-- **Plugins**: 3 available (Financial Advisor, Product Manager, AI Specialist)
+- **Plugins**: 5 available (CEO, Financial Advisor, Product Manager, AI Specialist, Tax Advisor)
 
 ## 🔮 Future Plugins
 

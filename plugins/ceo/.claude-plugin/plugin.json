@@ -1,0 +1,24 @@
+{
+  "name": "ceo",
+  "description": "CEO orchestrator agent that coordinates all marketplace agents to answer complex business questions and provide executive-level strategic guidance",
+  "version": "1.0.0",
+  "author": {
+    "name": "JontoIO",
+    "email": "contact@jonto.io"
+  },
+  "homepage": "https://github.com/jontoIO/claude-agents",
+  "repository": "https://github.com/jontoIO/claude-agents",
+  "license": "MIT",
+  "keywords": [
+    "ceo",
+    "strategy",
+    "orchestration",
+    "executive",
+    "planning",
+    "coordination",
+    "decision-making",
+    "roadmap",
+    "go-nogo",
+    "multi-agent"
+  ]
+}

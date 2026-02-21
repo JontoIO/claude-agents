@@ -49,6 +49,16 @@
         "name": "JontoIO"
       },
       "keywords": ["tax", "eu-tax", "vat", "iva", "spain", "corporate-tax", "irpf", "oss", "deductions", "compliance", "aeat", "saas-tax", "freelancer"]
+    },
+    {
+      "name": "ceo",
+      "source": "./plugins/ceo",
+      "description": "CEO orchestrator agent that coordinates all marketplace agents to answer complex business questions and provide executive-level strategic guidance",
+      "version": "1.0.0",
+      "author": {
+        "name": "JontoIO"
+      },
+      "keywords": ["ceo", "strategy", "orchestration", "executive", "planning", "coordination", "decision-making", "roadmap"]
     }
   ]
 }
