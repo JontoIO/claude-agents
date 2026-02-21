@@ -1,0 +1,10 @@
+{
+  "name": "tax-advisor",
+  "description": "EU tax analysis plugin that scans repositories for financial signals, fetches live rates from official tax authority websites, and produces tax estimates, deduction reports, VAT/IVA analysis, and compliance calendars for Spain, Germany, France, Italy, Netherlands, Portugal, Poland, and Ireland",
+  "version": "1.0.0",
+  "author": { "name": "JontoIO", "email": "contact@jonto.io" },
+  "homepage": "https://github.com/jontoIO/claude-agents",
+  "repository": "https://github.com/jontoIO/claude-agents",
+  "license": "MIT",
+  "keywords": ["tax", "eu-tax", "vat", "iva", "spain", "corporate-tax", "irpf", "oss", "tax-compliance", "deductions", "aeat", "saas-tax"]
+}
