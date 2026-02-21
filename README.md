@@ -134,6 +134,44 @@ A proactive AI optimization plugin that monitors Claude sessions, optimizes inst
 
 **Documentation**: [Plugin README](./plugins/ai-specialist/README.md)
 
+---
+
+### Tax Advisor
+
+**Version**: 1.0.0
+
+An EU tax analysis plugin for software founders, freelancers, and SaaS teams. Scans repositories for financial signals, fetches live rates from official tax authority websites, and produces tax estimates, VAT/IVA analysis, deduction reports, and compliance calendars for 8 EU countries.
+
+**Features**:
+- Automatic repository scanning for revenue/cost signals (Stripe, AWS, Sentry, SendGrid, etc.)
+- Live tax rate retrieval from 8 official EU government websites via WebFetch
+- EU VAT/IVA classification with reverse-charge, OSS threshold assessment, and quarterly calendar
+- Corporate tax estimation (IS/CT/KSt/IRES/VPB/IRC/CIT) with three scenarios
+- Deduction discovery with documentation requirements and Modelo 347 flagging
+- Month-by-month compliance calendar with deadlines, amounts, and penalty schedule
+
+**Components**:
+- **Agent**: `tax-advisor` - EU tax analysis specialist with live-rate fetching
+- **Skills**:
+  - `country-tax-rules` - Fetch live rates from official authority + country comparison
+  - `deduction-analysis` - Repo scan + interview + documented deduction table
+  - `vat-analysis` - EU VAT classification, OSS assessment, quarterly obligations
+  - `tax-estimation` - Full IS/CT + VAT/IVA + IRPF calculation with 3 scenarios
+  - `compliance-calendar` - Month-by-month filing calendar with deadlines and penalties
+- **Commands**:
+  - `tax-country-setup` - Country reference card with optional comparison (2-3 min)
+  - `deductions-scan` - Automated repo scan for deductible expense signals (3-5 min)
+  - `quick-tax-estimate` - Rapid ballpark estimate from revenue + country + structure (2 min)
+
+**Supported Countries**: Spain, Germany, France, Italy, Netherlands, Portugal, Poland, Ireland
+
+**Installation**:
+```bash
+/plugin install tax-advisor@jontoio-claude-agents
+```
+
+**Documentation**: [Plugin README](./plugins/tax-advisor/README.md)
+
 ## 📁 Marketplace Structure
 
 ```

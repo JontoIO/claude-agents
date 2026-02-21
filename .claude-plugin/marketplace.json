@@ -39,6 +39,16 @@
         "name": "JontoIO"
       },
       "keywords": ["ai-optimization", "claude-instructions", "token-efficiency", "memory-management", "test-strategy", "prompt-engineering", "context-optimization", "ai-integration"]
+    },
+    {
+      "name": "tax-advisor",
+      "source": "./plugins/tax-advisor",
+      "description": "EU tax analysis plugin that scans repositories for financial signals, fetches live rates from official tax authority websites, and produces tax estimates, VAT/IVA analysis, deduction reports, and compliance calendars for 8 EU countries",
+      "version": "1.0.0",
+      "author": {
+        "name": "JontoIO"
+      },
+      "keywords": ["tax", "eu-tax", "vat", "iva", "spain", "corporate-tax", "irpf", "oss", "deductions", "compliance", "aeat", "saas-tax", "freelancer"]
     }
   ]
 }
