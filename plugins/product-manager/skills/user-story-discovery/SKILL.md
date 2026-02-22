@@ -1,3 +1,8 @@
+---
+name: user-story-discovery
+description: Turn raw or solution-framed requirements into proper user story specs through a 4-step interactive discovery dialogue — intake, problem discovery, solution exploration, and full spec generation
+---
+
 # User Story Discovery Skill
 
 Interactive framework for turning raw requirements into proper user story specs through structured problem discovery dialogue.

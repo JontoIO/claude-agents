@@ -35,6 +35,19 @@ Follow [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) format:
 - Fixed `file` — what was wrong
 ```
 
+### Required frontmatter
+
+Every `SKILL.md` file MUST begin with YAML frontmatter or the plugin system will not discover it:
+
+```markdown
+---
+name: skill-name
+description: One sentence describing when to use this skill
+---
+```
+
+Agent `.md` files also require frontmatter (`name` + `description`). Command files do NOT use frontmatter.
+
 ### What counts as a plugin modification
 
 - Any file under `plugins/<name>/skills/`
