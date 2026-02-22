@@ -1,6 +1,6 @@
 # Claude Agents Plugin Marketplace
 
-A curated collection of Claude AI plugins for financial analysis, product management, and AI optimization.
+A curated collection of Claude AI plugins for financial analysis, product management, AI optimization, tax compliance, executive orchestration, and QA engineering.
 
 ## 📖 Overview
 
@@ -76,6 +76,7 @@ A comprehensive product management plugin that provides product strategy, compet
 - Evidence-based user personas using jobs-to-be-done
 - Prioritized improvement proposals with RICE scoring
 - Compelling changelogs optimized for different audiences
+- Interactive user story discovery through structured problem dialogue
 
 **Components**:
 - **Agent**: `product-manager` - Strategic product management specialist
@@ -85,11 +86,13 @@ A comprehensive product management plugin that provides product strategy, compet
   - `persona-definition` - 6-step evidence-based persona creation
   - `improvement-proposals` - 6-step prioritized feature proposals
   - `changelog-creation` - 5-step user-facing changelog generation
+  - `user-story-discovery` - 4-step interactive framework for turning raw requirements into user story specs
 - **Commands**:
   - `quick-competitive-scan` - 5-10 min rapid competitor overview
   - `quick-changelog` - 3-5 min user-facing changelog from commits
   - `persona-quick-reference` - 5 min basic persona profile
   - `feature-impact-estimate` - 3-5 min RICE score and go/no-go
+  - `quick-user-story` - 5-10 min condensed user story spec for well-defined requirements
 
 **Installation**:
 ```bash
@@ -202,7 +205,7 @@ The CEO orchestrator agent that coordinates all marketplace agents (financial-ad
   - `opportunity-scan` — Rapid opportunity score and recommendation
   - `weekly-ceo-briefing` — Weekly executive summary
 
-**Works best with**: financial-advisor, product-manager, tax-advisor, ai-specialist
+**Works best with**: financial-advisor, product-manager, tax-advisor, ai-specialist, qa-engineer
 
 **Installation**:
 ```bash
@@ -210,6 +213,38 @@ The CEO orchestrator agent that coordinates all marketplace agents (financial-ad
 ```
 
 **Documentation**: [Plugin README](./plugins/ceo/README.md)
+
+---
+
+### QA Engineer
+
+**Version**: 1.0.0
+
+A methodical QA specialist plugin that maps happy paths, hunts bugs across 4 categories, and runs regression testing with structured reports. Produces living QA documentation (HP-XXX files) stored in the target project and generates BUG-XXX reports with evidence for every failure found.
+
+**Features**:
+- Happy path discovery by scanning routing files, HTTP verbs, navigation patterns, and form submissions
+- Systematic bug detection across 4 categories: console errors, broken pages, broken endpoints, unexpected UX
+- Regression testing against all active HP files with pass/fail dashboard
+- Environment health check with traffic-light summary (🟢/🟡/🔴) in under 5 minutes
+- Evidence-first reporting: every bug backed by curl output, grep result, or WebFetch response
+
+**Components**:
+- **Agent**: `qa-engineer` - Methodical, evidence-based QA specialist
+- **Skills**:
+  - `happy-path-mapping` - Discover and document all significant user flows as HP-XXX files
+  - `bug-hunt` - 4-category systematic bug detection (console, pages, endpoints, UX)
+  - `regression-testing` - Run all active HP files and produce structured pass/fail report
+- **Commands**:
+  - `quick-health-check` - 5-min traffic-light snapshot of app reachability and critical pages
+  - `suggest-happy-paths` - Propose new HP files based on codebase analysis or bug reports
+
+**Installation**:
+```bash
+/plugin install qa-engineer@jontoio-claude-agents
+```
+
+**Documentation**: [Plugin README](./plugins/qa-engineer/README.md)
 
 ## 📁 Marketplace Structure
 
@@ -233,8 +268,8 @@ claude-agents/                          # Marketplace root
 │   │   │   └── plugin.json
 │   │   ├── agents/
 │   │   │   └── product-manager.md
-│   │   ├── skills/                     # 5 product skills
-│   │   ├── commands/                   # 4 quick commands
+│   │   ├── skills/                     # 6 product skills
+│   │   ├── commands/                   # 5 quick commands
 │   │   ├── examples/                   # Product examples
 │   │   ├── README.md
 │   │   └── CHANGELOG.md
@@ -258,14 +293,24 @@ claude-agents/                          # Marketplace root
 │   │   ├── examples/                   # EU SaaS example
 │   │   ├── README.md
 │   │   └── CHANGELOG.md
-│   └── ceo/                            # CEO orchestrator plugin
+│   ├── ceo/                            # CEO orchestrator plugin
+│   │   ├── .claude-plugin/
+│   │   │   └── plugin.json
+│   │   ├── agents/
+│   │   │   └── ceo.md                  # CEO orchestrator agent
+│   │   ├── skills/                     # 5 strategic skills
+│   │   ├── commands/                   # 4 executive commands
+│   │   ├── examples/                   # Production launch example
+│   │   ├── README.md
+│   │   └── CHANGELOG.md
+│   └── qa-engineer/                    # QA engineer plugin
 │       ├── .claude-plugin/
 │       │   └── plugin.json
 │       ├── agents/
-│       │   └── ceo.md                  # CEO orchestrator agent
-│       ├── skills/                     # 5 strategic skills
-│       ├── commands/                   # 4 executive commands
-│       ├── examples/                   # Production launch example
+│       │   └── qa-engineer.md          # QA specialist agent
+│       ├── skills/                     # 3 QA skills
+│       ├── commands/                   # 2 quick commands
+│       ├── examples/                   # E-commerce QA example
 │       ├── README.md
 │       └── CHANGELOG.md
 ├── docs/
@@ -349,6 +394,9 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on:
 - [Financial Advisor Plugin](./plugins/financial-advisor/README.md) - Financial analysis documentation
 - [Product Manager Plugin](./plugins/product-manager/README.md) - Product management documentation
 - [AI Specialist Plugin](./plugins/ai-specialist/README.md) - AI optimization documentation
+- [Tax Advisor Plugin](./plugins/tax-advisor/README.md) - EU tax analysis documentation
+- [CEO Plugin](./plugins/ceo/README.md) - Executive orchestration documentation
+- [QA Engineer Plugin](./plugins/qa-engineer/README.md) - QA testing and happy path documentation
 
 ## 🔗 Resources
 
@@ -365,7 +413,7 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 - **Name**: jontoio-claude-agents
 - **Owner**: JontoIO
 - **Version**: 1.0.0
-- **Plugins**: 5 available (CEO, Financial Advisor, Product Manager, AI Specialist, Tax Advisor)
+- **Plugins**: 6 available (CEO, Financial Advisor, Product Manager, AI Specialist, Tax Advisor, QA Engineer)
 
 ## 🔮 Future Plugins
 
