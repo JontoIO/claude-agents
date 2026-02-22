@@ -5,7 +5,7 @@
     "email": "contact@jonto.io"
   },
   "metadata": {
-    "description": "A curated collection of Claude AI plugins for financial analysis, product management, and AI optimization",
+    "description": "A curated collection of Claude AI plugins for financial analysis, product management, AI optimization, and quality assurance",
     "version": "1.0.0",
     "pluginRoot": "./plugins"
   },
@@ -59,6 +59,16 @@
         "name": "JontoIO"
       },
       "keywords": ["ceo", "strategy", "orchestration", "executive", "planning", "coordination", "decision-making", "roadmap"]
+    },
+    {
+      "name": "qa-engineer",
+      "source": "./plugins/qa-engineer",
+      "description": "Methodical QA specialist that maps happy paths (HP-XXX files), hunts bugs across 4 categories, and runs regression testing with structured BUG-XXX reports",
+      "version": "1.0.0",
+      "author": {
+        "name": "JontoIO"
+      },
+      "keywords": ["qa", "testing", "happy-path", "bug-detection", "regression", "endpoint-testing", "quality-assurance"]
     }
   ]
 }

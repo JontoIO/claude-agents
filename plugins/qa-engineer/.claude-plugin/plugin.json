@@ -1,0 +1,21 @@
+{
+  "name": "qa-engineer",
+  "description": "Methodical QA specialist that maps happy paths (HP-XXX files), hunts bugs across 4 categories, and runs regression testing with structured BUG-XXX reports",
+  "version": "1.0.0",
+  "author": {
+    "name": "JontoIO",
+    "email": "contact@jonto.io"
+  },
+  "homepage": "https://github.com/jontoIO/claude-agents",
+  "repository": "https://github.com/jontoIO/claude-agents",
+  "license": "MIT",
+  "keywords": [
+    "qa",
+    "testing",
+    "happy-path",
+    "bug-detection",
+    "regression",
+    "endpoint-testing",
+    "quality-assurance"
+  ]
+}
