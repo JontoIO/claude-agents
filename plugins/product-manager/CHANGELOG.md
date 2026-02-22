@@ -5,6 +5,35 @@ All notable changes to the Product Manager agent plugin will be documented in th
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-02-22
+
+### ✨ Added
+
+#### New Skill: User Story Discovery (`skills/user-story-discovery/SKILL.md`)
+- 4-step interactive framework for turning raw requirements into proper user story specs
+- Step 1: Requirement intake and classification (problem statement vs. solution proposal)
+- Step 2: Problem discovery through structured dialogue — asks 3–5 clarifying questions and waits for answers before speccing
+- Step 3: Solution exploration — generates 2–4 alternatives (including user-proposed solution) evaluated without bias
+- Step 4: Full user story documentation in the same `Proposal N:` format as `improvement-proposals`
+- Embeds the PM principle: users propose solutions, PMs understand problems
+- Includes end-to-end example dialogue (PDF export request → shareable link recommendation)
+- Quality checklist ensuring spec addresses discovered problem, not just the initial proposal
+
+#### New Command: Quick User Story (`commands/quick-user-story.md`)
+- 5-10 min condensed user story spec for well-defined, unambiguous requirements
+- Condensed output format: Problem → Solution → 3 user stories → Core requirements → Success metrics
+- Clear guidance on when to use this vs. the full `user-story-discovery` skill
+- Escape hatch: if requirement turns out ambiguous mid-execution, switches to the full skill instead of guessing
+- Example output included (admin CSV export)
+
+#### Agent updates (`agents/product-manager.md`)
+- Core Capabilities expanded from 8 to 9 (added User Story Discovery)
+- Available Skills: added `user-story-discovery`
+- Available Commands: added `quick-user-story`
+- Example Scenarios: added 3 stakeholder-requirement scenarios
+
+---
+
 ## [1.0.0] - 2025-02-15
 
 ### 🎉 Initial Release
