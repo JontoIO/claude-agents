@@ -24,7 +24,7 @@
       "name": "product-manager",
       "source": "./plugins/product-manager",
       "description": "Product strategy, competitive analysis, persona definition, and product evolution planning",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "JontoIO"
       },

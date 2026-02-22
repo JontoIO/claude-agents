@@ -2,11 +2,13 @@
 
 ## Plugin Versioning (REQUIRED)
 
-**Whenever you modify any file inside a plugin directory, you MUST:**
+**Whenever you modify any file inside a plugin directory, you MUST update the version in THREE places:**
 
-1. **Bump the version** in `plugins/<plugin-name>/.claude-plugin/plugin.json`
-2. **Add a changelog entry** in `plugins/<plugin-name>/CHANGELOG.md`
-3. **Update the version** referenced in `README.md` if it appears there
+1. **`plugins/<plugin-name>/.claude-plugin/plugin.json`** — the plugin's own manifest
+2. **`.claude-plugin/marketplace.json`** — the marketplace registry (this is what the plugin installer reads; if this is not updated, other projects will never see the new version)
+3. **`plugins/<plugin-name>/CHANGELOG.md`** — changelog entry documenting what changed
+
+All three must have the same version number. Missing any one of them will cause the update to be invisible to users.
 
 ### Versioning Rules (Semantic Versioning)
 
